@@ -1,9 +1,9 @@
 import EventDispatcher from "../../_shared/event/event-dispatcher";
-import CustomerAddressChangedEvent from "../../customer/event/customer-address-changed.event";
-import CustomerCreatedEvent from "../../customer/event/customer-created.event";
-import EnviaConsoleLogWhenAddressChangeHandler from "../../customer/event/handler/envia-console-log-when-address-change.handler";
-import EnviaConsoleLog1Handler from "../../customer/event/handler/envia-console-log1.handler";
-import EnviaConsoleLog2Handler from "../../customer/event/handler/envia-console-log2.handler";
+import CustomerAddressChangedEvent from "./customer-address-changed.event";
+import CustomerCreatedEvent from "./customer-created.event";
+import EnviaConsoleLogWhenAddressChangeHandler from "./handler/envia-console-log-when-address-change.handler";
+import EnviaConsoleLog1Handler from "./handler/envia-console-log1.handler";
+import EnviaConsoleLog2Handler from "./handler/envia-console-log2.handler";
 
 describe ("Domain events tests", () => {
 
