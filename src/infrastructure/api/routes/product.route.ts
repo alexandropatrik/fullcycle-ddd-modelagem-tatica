@@ -16,7 +16,6 @@ productRoute.post('/', async (req: Request, res: Response) => {
         const output = await usecase.execute(productDto);
         res.send(output);
     } catch (error) {
-        console.log(error);
         res.status(400).send(error);
     }
 });
@@ -27,7 +26,6 @@ productRoute.get('/', async (req: Request, res: Response) => {
         const output = await usecase.execute({});
         res.send(output);
     } catch (error) {
-        console.log(error);
         res.status(500).send(error);
     }
 });
